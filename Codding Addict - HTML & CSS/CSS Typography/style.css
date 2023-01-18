@@ -1,0 +1,47 @@
+/* 
+font-size 
+font-family
+font-weight
+font-style
+line-height
+word-spacing
+letter-spacing
+text-transform
+text-decoration 
+ */
+
+/* Google Fonts importation */
+
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  font-family: "Trade Winds", cursive;
+  font-size: 30px;
+  text-align: center;
+  text-indent: 50px;
+  text-decoration: overline;
+}
+
+.firstP {
+  word-spacing: 30px;
+}
+
+.dummyText {
+  line-height: 3; /* Not using units in the line-height is going to mean that the written 
+  number is going to be multolicated by thr font-size, i.e if you write
+  line-height: 2 , and your font-size: is 9px, the line-height: is going
+  to be 18*/
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.someLink {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}

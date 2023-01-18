@@ -1,0 +1,291 @@
+body {
+  font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: hsl(0, 0%, 50%);
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(0, 0%, 30%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 0 15px rgba(68, 68, 68, 0.5);
+  margin: 1rem;
+  padding: 1.5rem;
+
+  border-radius: 18px;
+
+  transition: all 0.25s ease-in;
+}
+
+.items h2 {
+  line-height: 0.6rem;
+}
+
+.keyTitle {
+  font-size: 2rem;
+}
+
+.keyCode {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.keyPrice {
+  font-size: 1.25rem;
+  color: #999;
+}
+
+.keyPrice span {
+  font-weight: bold;
+  color: rgb(0, 161, 0);
+}
+.cards img {
+  max-width: 30rem;
+  max-height: 15rem;
+  border-radius: 12px;
+}
+
+.buyBtn {
+  cursor: pointer;
+}
+
+.button2 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 4px;
+  color: hsl(183, 98%, 40%);
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px 10px;
+  font-family: "Roboto", sans-serif;
+  filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  transition: all 0.15s linear;
+}
+.button2:hover {
+  border: 1px solid transparent;
+}
+.button2:hover span {
+  position: absolute;
+  display: block;
+}
+.button2:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3a86ff);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.button2:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.button2:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%,
+  100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.button2:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* Styling purchase button */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+.buyBtn {
+  position: relative;
+  display: inline-flex;
+  width: 120px;
+  height: 55px;
+  margin-top: 1rem;
+  perspective: 1000px;
+}
+.buyBtn a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.35s;
+  font-family: "Montserrat", sans-serif;
+}
+.buyBtn a:before,
+.buyBtn a:after {
+  position: absolute;
+  content: "BUY ME";
+  width: 120px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.buyBtn a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.buyBtn a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.buyBtn a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* Styling look more btn */
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  border-radius: 6px;
+
+  left: 50%;
+  transform: translate(-50%);
+  margin: 10px;
+}
+
+.btn-5 {
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-5:hover {
+  background: transparent;
+  color: #000;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+.btn-5:before,
+.btn-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: 400ms ease all;
+}
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

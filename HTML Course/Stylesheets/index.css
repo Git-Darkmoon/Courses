@@ -1,0 +1,139 @@
+.hello {
+  width: 5rem;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-right: 3rem;
+  border-radius: 2rem;
+  box-shadow: -6px 6px 4px black;
+  color: rgb(255, 255, 255);
+  transition: 0.6s;
+  margin-left: 1rem;
+
+  background: linear-gradient(
+    45deg,
+    hsl(192, 88%, 77%),
+    hsl(204, 61%, 56%),
+    rgb(247, 0, 255)
+  );
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  margin-left: 1.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hello:hover {
+  filter: brightness(1.15);
+  transform: scale(1.2, 1.1);
+  box-shadow: -6px 6px 4px rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px 3px rgb(0, 0, 0);
+  margin-left: 2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-left: 2px;
+}
+
+.parrafos {
+  margin-left: 1rem;
+  color: hsl(293, 54%, 35%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 1s;
+}
+
+.parrafos:hover {
+  font-size: 20px;
+  filter: saturate(5);
+  transform: scaleY(1.1);
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(73, 156, 211) 10%,
+    rgb(255, 164, 79) 85%
+  );
+}
+
+.warning {
+  position: absolute;
+  right: 15px;
+  margin-top: 2rem;
+}
+
+.learning {
+  position: absolute;
+  right: 15px;
+}
+
+.pag2 {
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  margin-top: 5.3rem;
+}
+
+.pag2:hover {
+  transform: translateY(-5px);
+  color: floralwhite;
+}
+
+.pag3 {
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  margin-top: 8rem;
+  color: hsl(293, 54%, 35%);
+}
+
+.pag3:hover {
+  transform: translateY(-5px);
+  color: floralwhite;
+}
+
+.pag4 {
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  margin-top: 10.7rem;
+  color: hsl(293, 54%, 35%);
+}
+
+.pag4:hover {
+  transform: translateY(-5px);
+  color: floralwhite;
+}
+
+.logo {
+  width: 40rem;
+  position: absolute;
+  margin-top: 20rem;
+  text-align: center;
+  opacity: 0.5;
+  right: 5rem;
+}
+
+hr {
+  background: rgb(0, 255, 21);
+  box-shadow: 0px 2px 6px aquamarine;
+}

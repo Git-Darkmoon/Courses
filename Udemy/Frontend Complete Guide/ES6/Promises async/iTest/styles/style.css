@@ -1,0 +1,166 @@
+.navBar {
+  width: 100vw;
+  height: 3.5rem;
+  background-color: rgb(94, 73, 226);
+  position: fixed;
+}
+.navBar ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navBar .links-list {
+  list-style: none;
+}
+.navBar .links {
+  text-decoration: none;
+  color: #ddd;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.15rem;
+}
+.navBar .links:hover {
+  color: #fa0;
+  font-size: 1.35rem;
+}
+.navBar .links:active {
+  font-size: 1.25rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  background-color: rgb(94, 73, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer h4 {
+  color: #ddd;
+  font-weight: 100;
+}
+footer h4 a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+footer h4 a:hover {
+  color: #fa0;
+}
+
+.card {
+  box-shadow: 7px 7px 12px rgba(102, 102, 102, 0.5);
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  min-height: 11.875rem;
+  max-width: 16rem;
+  border-radius: 0.5rem;
+  border-top: 1px solid rgba(102, 102, 102, 0.3);
+  border-left: 1px solid rgba(102, 102, 102, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.card h4 {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid slateblue;
+  font-size: 1.65rem;
+  transition: all 0.3s ease-in-out;
+}
+.card p {
+  letter-spacing: 2px;
+  color: #444;
+  -webkit-padding-before: 0.25rem;
+          padding-block-start: 0.25rem;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card p:hover:hover {
+  overflow: visible;
+}
+.card summary {
+  color: slateblue;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.card .addressDetails {
+  margin-block: 0.5rem;
+  list-style: none;
+  text-indent: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #444;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.card .addressDetails span {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.card .addressDetails:hover {
+  overflow: visible;
+}
+
+.card:hover {
+  background-color: rgb(127, 73, 226);
+}
+.card:hover h4 {
+  color: #fbfff0;
+  border-bottom: 3px solid rgb(175, 164, 244);
+}
+.card:hover p {
+  color: #ccc;
+}
+.card:hover summary {
+  color: #fbfff0;
+}
+.card:hover .addressDetails {
+  color: #ccc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+main {
+  padding-block: 4rem;
+}
+main .title {
+  text-align: center;
+  margin-block: 1rem;
+  font-size: 3rem;
+  color: hsl(41deg, 100%, 50%);
+  text-shadow: 4px 3px 3px rgb(0, 0, 0);
+}
+main .data {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 40vw;
+  width: 100vw;
+  height: 100%;
+  padding-inline: 10rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2.25rem;
+}/*# sourceMappingURL=style.css.map */

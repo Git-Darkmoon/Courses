@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --fontS: 1.25rem;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.btns {
+  display: flex;
+}
+
+button {
+  margin: 3rem;
+  padding: 1rem;
+  width: 12rem;
+  height: 5rem;
+  border-radius: 12px;
+  background-color: hsl(209, 100%, 70%);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: var(--fontS);
+}
+
+p {
+  font-size: var(--fontS);
+}

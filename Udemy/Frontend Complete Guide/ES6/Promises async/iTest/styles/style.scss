@@ -1,0 +1,43 @@
+@use "./navbar";
+@use "./cards";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+main {
+  padding-block: 4rem;
+
+  .title {
+    text-align: center;
+    margin-block: 1rem;
+    font-size: 3rem;
+    color: hsl(41, 100%, 50%);
+    text-shadow: 4px 3px 3px rgb(0, 0, 0);
+  }
+
+  .data {
+    display: flex;
+    flex-wrap: wrap;
+
+    min-width: 40vw;
+    width: 100vw;
+    height: 100%;
+
+    padding-inline: 10rem;
+
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+  }
+}

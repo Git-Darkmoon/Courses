@@ -1,0 +1,68 @@
+/* background-repeat : it is default by the browser */
+/* background size */
+/* background-attachment */
+/* linear-gradient(to bottom), is the default behavior  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  color: whitesmoke;
+  text-shadow: 3px 2px 4px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.big-img {
+  background: url("./bigImage.jpeg") center/cover no-repeat fixed;
+
+  /* INSTEAD OF writing all this, exist a shorthand and it is write all the properties 
+  next to the url, in the sequence below:
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+.small-img {
+  background: linear-gradient(
+      to top,
+      rgba(255, 100, 239, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("/images/folder-img.jpeg");
+  background-position: 50% 50%; /* It is going to work with the x-axis and the y-axis*/
+  /* Background size: cover, is going to cover the whole div regardless its size */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: scroll; is the default behavior */
+  background-attachment: fixed;
+}
+
+.folder-img {
+  /* combining linear-gradient with the image is going to generate a cool overlay 
+  like the shown in the html
+  
+  in the linear-gradient is possible to just add one color it MUST NOT be two or more*/
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url("./bigImage.jpeg");
+  background-position: center;
+  /* background size:contain, is going to keep the ratio of the image but adjust it to the "container"
+    in this case to the height of the div */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

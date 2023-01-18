@@ -1,0 +1,60 @@
+/* 
+Transition 0 = 100%
+from start state to end state
+ANIMATION 0 1% 2%... 100%
+multiple states
+*/
+
+body {
+  background: #222;
+}
+
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: hsl(200, 100%, 30%);
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background: hsl(348, 83%, 57%);
+  height: 50%;
+  width: 50%;
+}
+
+.parent:hover .child {
+  /* Using animation is not necessary to write transition */
+  animation: left-to-right 2s ease-in forwards /*x*/ 3 /*y*/ alternate /*z*/;
+  /* animation-fill-mode: x; */
+  /* animation-iteration-count: y; (can be numbers ( times) or infinite) */
+  /* animation-direction: z; */
+  /* animation-play-state: paused; */
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateY(100%);
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: translate(100%, 100%);
+    filter: brightness(1.5);
+  }
+
+  75% {
+    transform: translateX(100%);
+    filter: brightness(2);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

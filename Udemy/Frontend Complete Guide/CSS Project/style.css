@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --iconSize: 2rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.appsIcon {
+  width: var(--iconSize);
+  height: var(--iconSize);
+  cursor: pointer;
+}
+
+.profilePicture {
+  width: var(--iconSize);
+  height: var(--iconSize);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upperOptions {
+  line-height: 24px;
+  font-size: 14px;
+  width: 98vw;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1rem;
+}
+
+.upperOptions a {
+  color: hsl(0, 0%, 40%);
+  text-decoration: none;
+}
+
+.upperOptions a:hover {
+  text-decoration: underline;
+}
+
+main img {
+  width: 17rem;
+  height: 5.75rem;
+}
+
+main {
+  margin-top: 1rem;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.inputForm {
+  width: 36.4rem;
+  min-height: 2.75rem;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  border: 2px solid hsla(0, 0%, 76%, 0.35);
+}
+
+.inputForm i {
+  color: #808080;
+}
+
+.inputForm input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-left: 1rem;
+  color: hsl(0, 0%, 35%);
+}
+
+.btn {
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: hsl(0, 0%, 35%);
+  background-color: hsl(0, 0%, 90%);
+  transition: box-shadow 0.25s ease;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 2.5px hsl(0, 0%, 40%);
+}
+
+p {
+  color: hsl(0, 0%, 35%);
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+p a,
+a:visited,
+a:active {
+  color: #0000ee;
+  text-decoration: none;
+}

@@ -1,0 +1,69 @@
+/* 
+Media Queries
+Responsive Design
+Style Elements on different screen sizes
+min-height --- starting from
+max-width --- up to
+Mobile First
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: yellow;
+}
+
+.banner {
+  background: rgb(0, 163, 82);
+  padding: 1rem;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.grid div {
+  background: linear-gradient(to top right, goldenrod, darkorange);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    background: salmon;
+  }
+
+  .banner {
+    background: goldenrod;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(to right, green, darkgreen);
+  }
+
+  .banner {
+    background: orchid;
+  }
+}

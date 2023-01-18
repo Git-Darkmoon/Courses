@@ -1,0 +1,80 @@
+/* Pixels - absolute values, one dot on the screen 
+FONT SIZE - size of the font
+WIDTH
+HEIGHT
+ */
+
+.title {
+  font-size: 60px;
+  background: lightskyblue;
+  color: azure;
+  width: 300px;
+  /* An advantage of using min-height is, you can set a minimum of space you want like 
+  the example below but, if the text/content of the element is superior than the size set, it is
+  going to resize to perfectly fit all the content there. */
+  min-height: 80px;
+}
+
+/*  % - percent. RELATIVE UNIT/VALUE. Depends on the parent */
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+
+.inner {
+  color: aliceblue;
+  width: 50%;
+  /* Using max-height you are declaring the maximum height supported by
+  the element, w.e if it is less nothing is going to happen but if the content is superior
+  is going to look like the example below */
+  max-height: 6rem;
+  background: salmon;
+}
+
+/* em - RELATIVE, depends on parent 
+
+1em - 16px default browser style
+
+1em =  base value (16px) * number (1) = 16px
+1em =  base value (16px) * number (2) = 32px
+*/
+
+.absolute {
+  font-size: 32px;
+}
+
+.relative {
+  font-size: 2em;
+}
+
+/*
+rem - RELATIVE, depends on root (the root is HTML )
+1 rem base value 16px * number(1)
+ */
+
+.rem {
+  font-size: 2rem;
+}
+
+/* 
+VIEWPORT UNITS
+vh - height - percent of the screen,
+vw - width - percent of the screen
+*/
+
+.viewportUnits {
+  font-size: 3vw;
+}
+
+.vU {
+  font-size: 2vh;
+}
+
+.hero {
+  background: hsl(280, 100%, 65%);
+  height: 50vh;
+  width: 30vw;
+  overflow: scroll;
+}

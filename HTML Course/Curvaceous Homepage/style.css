@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 150px 20vw;
+}
+
+h1 {
+  font-size: 6rem;
+  font-style: italic;
+}
+
+.blue {
+  background-color: #396eff;
+}
+
+.red {
+  background: linear-gradient(to bottom right, #f957b0, #eb7d0e);
+}
+
+.pink {
+  background-color: #f13964;
+}
+
+.dark {
+  background-color: hsl(0, 0%, 18%);
+}
+
+.darky {
+  background-color: #001220;
+}
+
+/* First section curve */
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%; /*The first arg. represent the verical value,
+   the 2 the horizontal radius */
+  width: 57%;
+  height: 100%;
+  background-color: #222;
+  transform: translate(85%, 40%);
+}
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%; /*The first arg. represent the verical value,
+   the 2 the horizontal radius */
+  width: 58%;
+  height: 90%;
+  background-color: #396eff;
+  transform: translate(-4%, 50%);
+  z-index: -1;
+}
+
+/* Second Section curve */
+
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: hsl(0, 0%, 18%);
+  z-index: -1;
+}
+
+/* Third Curve section */
+
+.topWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.topWave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 161px;
+}
+
+.topWave .shape-fill {
+  fill: #000000;
+}
+
+.bottomWave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bottomWave svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 150px;
+}
+
+.bottomWave .shape-fill {
+  fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  bottomWave svg {
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+}
+
+/* Fourth Section Curves (haikei) */
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("waves-layered.svg");
+}
+
+/* Fifth curves */
+
+.poly-grid {
+  background: url("poly-grid.svg") center/cover no-repeat;
+}

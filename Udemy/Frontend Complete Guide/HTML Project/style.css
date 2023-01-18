@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --nav-height: 3.35rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: rgb(170, 170, 170);
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(0, 0%, 47%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #014d87;
+  width: 100vw;
+  height: var(--nav-height);
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-links {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.5rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 1.15rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.nav-links a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.first-section {
+  width: 100vw;
+  height: 62vh;
+  background: url("assets/gallery img-1.jpg") center no-repeat;
+  background-size: 100%;
+}
+
+.gallery {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.gallery-title {
+  display: flex;
+  justify-content: center;
+  margin: 1.75rem 0;
+  font-size: 2rem;
+}
+
+.photo {
+  width: 24rem;
+  border-radius: 0.75rem;
+  border-bottom: 2px solid #014d873d;
+  transition: all 0.35s ease-in-out;
+}
+
+.photo:hover {
+  box-shadow: 0 0 20px #808080b0;
+  transform: scale(1.05);
+}
+
+.photo img {
+  width: 24rem;
+  height: 16.5rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.caption {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.15rem 0;
+}
+
+footer {
+  /* position: fixed;
+  bottom: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: var(--nav-height);
+  background-color: #014d87;
+  color: white;
+}

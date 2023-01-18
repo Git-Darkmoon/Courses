@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Keyboard</title>
+    <link rel="stylesheet" href="drum.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn" id="CLAP">
+        A
+        <h5>CLAP</h5>
+      </button>
+      <button class="btn" id="HIHAT">
+        S
+        <h5>HIHAT</h5>
+      </button>
+      <button class="btn" id="KICK">
+        D
+        <h5>KICK</h5>
+      </button>
+      <button class="btn" id="OPENHAT">
+        F
+        <h5>OPENHAT</h5>
+      </button>
+      <button class="btn" id="BOOM">
+        G
+        <h5>BOOM</h5>
+      </button>
+      <button class="btn" id="RIDE">
+        H
+        <h5>RIDE</h5>
+      </button>
+      <button class="btn" id="SNARE">
+        J
+        <h5>SNARE</h5>
+      </button>
+      <button class="btn" id="TOM">
+        K
+        <h5>TOM</h5>
+      </button>
+
+      <!-- Audio elements -->
+
+      <audio id="audioClap" controls style="display: none">
+        <source src="audios/clap.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioHihat" controls style="display: none">
+        <source src="audios/hihat.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioKick" controls style="display: none">
+        <source src="audios/kick.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioOpenhat" controls style="display: none">
+        <source src="audios/openhat.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioBoom" controls style="display: none">
+        <source src="audios/boom.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioRide" controls style="display: none">
+        <source src="audios/ride.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioSnare" controls style="display: none">
+        <source src="audios/snare.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="audioTom" controls style="display: none">
+        <source src="audios/tom.wav" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+  <script src="drum.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="jqueryIcon.png" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator with jQuery</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Content -->
+    <main>
+      <section class="container">
+        <form action="">
+          <h1 class="title">Basic Calculator</h1>
+
+          <div class="operationChoose">
+            <label for="mathOperation">Choose an operation: </label>
+            <select name="mathOperation" id="drop-down">
+              <option value="null"></option>
+              <option value="plus">+</option>
+              <option value="minus">-</option>
+              <option value="times">*</option>
+              <option value="divides">/</option>
+            </select>
+          </div>
+
+          <!-- Validating the inputs to only accept numeric values with the pattern  -->
+
+          <input
+            type="text"
+            pattern="[0-9]+"
+            name="firstNum"
+            id="fNum"
+            title="Only numeric values, please."
+            maxlength="5"
+            autocomplete="off"
+            required
+          />
+          <input
+            type="text"
+            pattern="[0-9]+"
+            name="secondNum"
+            id="sNum"
+            title="Only numeric values, please."
+            maxlength="5"
+            autocomplete="off"
+            required
+          />
+          <button disabled class="btn" id="calcBtn">Calculate</button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script defer src="app.js"></script>
+</html>

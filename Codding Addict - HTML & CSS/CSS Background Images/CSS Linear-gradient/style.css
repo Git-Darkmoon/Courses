@@ -1,0 +1,38 @@
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.one {
+  background: linear-gradient(to right, yellow, darkorange);
+}
+
+.two {
+  background: linear-gradient(
+    120deg,
+    hsl(100, 100%, 100%),
+    hsl(69, 100%, 80%),
+    hsl(60, 100%, 60%),
+    hsl(50, 100%, 60%),
+    hsl(40, 100%, 50%)
+  );
+}
+
+.three {
+  background: linear-gradient(to bottom right, cyan, deeppink);
+}
+
+.four {
+  background: linear-gradient(to right, skyblue 25%, gold 75%);
+}
+
+.five {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}

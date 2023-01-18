@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --nav-height: 3.35rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: rgb(170, 170, 170);
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(0, 0%, 47%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #014d87;
+  width: 100vw;
+  height: var(--nav-height);
+  position: fixed;
+}
+
+.nav-links {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.5rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 1.15rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.nav-links a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.first-section {
+  width: 100vw;
+  height: 62vh;
+  background: url("assets/Santorini Islands - Greece.jpg") center no-repeat;
+  background-size: 100%;
+}
+
+.article-title {
+  display: flex;
+  justify-content: center;
+  margin: 1.85rem 0;
+  font-size: 2rem;
+}
+
+article {
+  font-size: 1.1rem;
+  margin: 0 8rem;
+  text-align: justify;
+}
+
+footer {
+  /* position: fixed;
+  bottom: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: var(--nav-height);
+  background-color: #014d87;
+  color: white;
+}

@@ -1,0 +1,131 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    hsl(210, 100%, 50%),
+    hsl(275, 100%, 75%),
+    white
+  );
+  background-size: 300% 200%;
+  animation: fade 8s ease-in infinite;
+}
+
+@keyframes fade {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title {
+  font-family: "Chela One", cursive;
+  font-size: 2rem;
+  text-shadow: 4px 3px 2px #000;
+  color: aliceblue;
+}
+
+.home {
+  background-color: #f6d327;
+  background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+  border-radius: 2rem;
+  width: 3.5rem;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0.301);
+  transition: 0.3s;
+}
+
+.home:hover {
+  transform: translateY(-0.5rem);
+}
+
+.home-txt {
+  text-decoration: none;
+  color: white;
+  font-family: "Chela One", cursive;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.username {
+  background: rgba(252, 252, 252, 0.411);
+  border-color: rgba(252, 252, 252, 0);
+  border-radius: 10%;
+  font-style: italic;
+  font-weight: 650;
+  font-size: 1rem;
+  padding: 0.35rem;
+  text-align: center;
+}
+
+.username:focus {
+  outline: none;
+}
+
+.username-txt {
+  font-family: "Chela One", cursive;
+  text-shadow: 4px 2.5px 3px #000;
+  color: aliceblue;
+  margin-left: 0.5rem;
+}
+
+.password {
+  background: rgba(252, 252, 252, 0.411);
+  border-color: rgba(255, 0, 255, 0.021);
+  border-radius: 10%;
+  font-style: italic;
+  font-weight: 650;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.35rem;
+}
+
+.password:focus {
+  outline: none;
+}
+
+.password-txt {
+  font-family: "Chela One", cursive;
+  text-shadow: 4px 2.5px 3px #000;
+  color: aliceblue;
+  margin-left: 0.5rem;
+}
+.dateSelector {
+  background: rgba(252, 252, 252, 0.411);
+  border-color: rgba(255, 0, 255, 0.021);
+  border-radius: 10%;
+  font-style: italic;
+  font-weight: 650;
+  padding: 0.35rem;
+}
+
+.dateSelector:focus {
+  outline: none;
+}
+
+.dateSelector-txt {
+  font-family: "Chela One", cursive;
+  text-shadow: 4px 2.5px 3px #000;
+  color: aliceblue;
+  margin-left: 0.5rem;
+}
+
+.login {
+  font-size: 1.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

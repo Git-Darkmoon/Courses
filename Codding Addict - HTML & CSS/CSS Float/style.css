@@ -1,0 +1,53 @@
+/* Float property */
+
+/*.banner {
+  border: 5px solid red;
+  padding: 10px;
+}
+
+img {
+  */ /* float is going to "wrap" our image with the text around as the showing example  */
+/* float property is not limited to work just with imgs, i.e you can use li elements */
+/* float: left;
+}
+
+p {
+  /* By other side, clear is going to literally clear the float effect
+    but going to keep the position referred in the float */ /*
+  clear: left;
+}
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 200px;
+}
+
+.one {
+  background: coral;
+  border: 2px solid red;
+  padding: 5px;
+}
+img {
+  float: left;
+  margin-right: 1rem;
+}
+p {
+  padding: 1rem;
+}
+.two {
+  background: pink;
+}
+.three {
+  background: plum;
+}
+.four {
+  background: palevioletred;
+}

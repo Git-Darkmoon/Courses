@@ -1,0 +1,28 @@
+@import "./mixins", "./variables";
+
+nav {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgb(100, 59, 59);
+  color: #fff;
+
+  @include flexCenter();
+
+  ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $linksColor;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $linksColorOnHover;
+    }
+  }
+}

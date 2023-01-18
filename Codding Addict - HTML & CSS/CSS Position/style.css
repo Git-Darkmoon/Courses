@@ -1,0 +1,93 @@
+/* Position */
+
+/* The default browser value for the position property is static */
+/* Position:static - default, always positioned according to the normal flow,
+position:relative - position relative to it's normal position.
+top, bottom, left, right */
+
+/* IMPORTANT~~ Position:absolute - relative to the parent with position:relative
+so, it is going to look for the closest parent with position:relative */
+
+/* position:fixed - relative to viewport (screen), stays as we are scrolling
+will use other content to fill out the space */
+
+/* position:sticky - toggle between relative and fixed once the position is met 
+in the viewport - then it sticks
+one of the values top,bottom,left,right */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.sticky-navbar {
+  background: rgb(255, 121, 148);
+  color: azure;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: monospace;
+  position: sticky;
+  margin-top: 0;
+  top: 0;
+  width: 100vw;
+}
+.nav {
+  background: crimson;
+  color: azure;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+div {
+  border: 3px solid salmon;
+  background: yellow;
+  margin-top: 40px;
+}
+
+.one {
+  background: rgb(51, 178, 228);
+  color: snow;
+  /* position: relative; */
+  /* top: 200px; */ /* This is moving down the p, due to it acts like a margin */
+  bottom: 2rem; /* This is going to move it up */
+}
+
+.two {
+  background: rgb(18, 199, 108);
+  color: azure;
+  /* position: relative; */
+}
+
+.three {
+  background: crimson;
+  /* position: fixed; */
+}
+
+.special {
+  background: pink;
+  font-size: 20px;
+  color: #222;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.container {
+  min-height: 200vh;
+  background: powderblue;
+}
+
+.sandwich {
+  min-height: 100vh;
+}

@@ -1,0 +1,53 @@
+/* CSS BOX MODEL */
+
+* {
+  margin: 0;
+}
+
+h1,
+p {
+  color: antiquewhite;
+}
+
+h2 {
+  font-size: 42px;
+  background: red;
+  padding: 20px 50px;
+  border-bottom: 8px solid greenyellow;
+}
+
+p {
+  background: violet;
+  font-size: 24px;
+  padding: 10px;
+  margin: 20px;
+  /* border-width: 10px;
+   border-style: dotted;
+  border-color: greenyellow;
+  
+  /* This can be replaced by the shorthand AND 
+  the order of the sequence is really important by this:
+  
+  border:  width , style, color ;*/
+
+  border: 5px dashed hsl(180, 100%, 70%);
+  border-radius: 35px;
+}
+
+.links {
+  margin: 3rem;
+}
+
+a {
+  background-color: #689f3f;
+  text-decoration: none;
+  padding: 1.2rem 1.5rem;
+
+  /* Something cool and useful about the border is the similar one called
+  outline, is going to work the same BUT it will be different if you apply "offset" 
+  what is going to do ? is going to move away or in the border i.e  */
+
+  outline: 2px solid red;
+  outline-offset: 5px;
+  margin-left: 2rem;
+}

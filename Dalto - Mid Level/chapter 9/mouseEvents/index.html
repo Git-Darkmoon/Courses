@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        gap: 2rem;
+      }
+      button {
+        width: 15rem;
+        height: 6.5rem;
+        font-size: 2.5rem;
+        border: none;
+        cursor: pointer;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: linear-gradient(to top right, #ccc, #f7f);
+        transition: all 0.25s ease-in;
+      }
+      button:hover {
+        transform: scale(0.85);
+      }
+      input {
+        padding: 6px;
+        font-size: 1.25rem;
+        outline: none;
+        border-radius: 8px;
+      }
+    </style>
+    <title>Events</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn" id="1">Click Me 1</button
+      ><button class="btn" id="2">Click Me 2</button
+      ><button class="btn" id="3">Click Me 3</button
+      ><button class="btn" id="4">Click Me 4</button>
+    </div>
+    <input type="text" />
+  </body>
+  <script src="app.js"></script>
+</html>

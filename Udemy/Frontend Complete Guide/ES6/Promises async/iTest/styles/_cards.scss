@@ -1,0 +1,93 @@
+$transitionTime: all 0.3s ease-in-out;
+$whiteTxt: #fbfff0;
+
+.card {
+  box-shadow: 7px 7px 12px rgba(102, 102, 102, 0.5);
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  min-height: 11.875rem;
+  max-width: 16rem;
+
+  border-radius: 0.5rem;
+
+  border-top: 1px solid rgba(102, 102, 102, 0.3);
+  border-left: 1px solid rgba(102, 102, 102, 0.3);
+
+  transition: $transitionTime;
+
+  h4 {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid slateblue;
+
+    font-size: 1.65rem;
+    transition: $transitionTime;
+  }
+
+  p {
+    letter-spacing: 2px;
+    color: #444;
+    padding-block-start: 0.25rem;
+    padding-block-end: 1rem;
+    transition: $transitionTime;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      &:hover {
+        overflow: visible;
+      }
+    }
+  }
+
+  summary {
+    color: slateblue;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: $transitionTime;
+  }
+
+  .addressDetails {
+    margin-block: 0.5rem;
+    list-style: none;
+    text-indent: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+    font-weight: bold;
+    transition: $transitionTime;
+
+    span {
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+
+    &:hover {
+      overflow: visible;
+    }
+  }
+}
+
+.card:hover {
+  background-color: rgb(127, 73, 226);
+
+  h4 {
+    color: $whiteTxt;
+    border-bottom: 3px solid rgb(175, 164, 244);
+  }
+
+  p {
+    color: #ccc;
+  }
+
+  summary {
+    color: $whiteTxt;
+  }
+
+  .addressDetails {
+    color: #ccc;
+  }
+}

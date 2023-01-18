@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(
+    90deg,
+    hsl(29, 100%, 65%),
+    hsl(204, 61%, 56%),
+    hsl(34, 96%, 69%),
+    hsl(204, 61%, 56%),
+    hsl(29, 100%, 65%)
+  );
+  background-size: 500% 500%;
+  animation: gradient 12s ease infinite;
+  margin-left: 1.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.list {
+  font-size: 1.25rem;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.home {
+  background: linear-gradient(
+    120deg,
+    hsl(293, 96%, 69%),
+    hsl(0, 0%, 100%),
+    hsl(293, 96%, 69%)
+  );
+  background-size: 500% 500%;
+  animation: gradient 12s ease infinite;
+  margin-left: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  text-decoration: none;
+  animation: gradient 12s ease infinite;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-style: dotted;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home:hover {
+  transform: translateY(-0.7rem);
+  border-color: white;
+  border-width: 0.3rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      h2 {
+        transition: 1.5s;
+        font-family: "Chela One", cursive;
+      }
+
+      .titleCool {
+        font-size: 3rem;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.55);
+        color: rgb(255, 255, 255);
+      }
+      .btn {
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background: linear-gradient(
+          45deg,
+          rgb(123, 253, 123),
+          rgb(255, 118, 214)
+        );
+        font-weight: bold;
+        position: absolute;
+        left: 20%;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.15s ease-in;
+      }
+
+      .btn:active {
+        transform: scale(0.85);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Events in javascript</h2>
+    <p>Hey!! I can trigger an event</p>
+    <button class="btn">Click me !</button>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* 
+transform: translate(), scale(), rotate(), skew()
+*/
+
+body {
+  background: #222;
+  text-align: center;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+  transform: translateX(50%);
+
+  /* If the value written is a percentage, the
+  reference is going to be either the width or the height according to
+  the axis*/
+
+  /* In this case the div is going to move 75px */
+}
+.two {
+  background: skyblue;
+  transform: translateY(25%);
+}
+.three {
+  background: greenyellow;
+  transform: translate(-50%, 50%);
+}
+
+/* 
+scale(), the escalation is going to be applied to both sides of the axis
+IF, the number is less than 1, the size is going to be reduced, for numbers
+greater than 1, the size is going to increment
+
+*/
+
+.four {
+  background: yellow;
+  transform: scaleX(1.5);
+}
+
+.five {
+  background: violet;
+  transform: scaleY(1.5);
+}
+
+.six {
+  background: turquoise;
+  transform: scale(0.5, 0.25);
+  /* If the size to adjust is the same for both axis you can do
+  transform: scale(2);
+  */
+}
+
+/* rotate(), can rotate the element in the x,y,z axis */
+
+.seven {
+  background: royalblue;
+  transform: skewX(45deg);
+}
+
+.eight {
+  background: sandybrown;
+  transform: skewY(120deg);
+}
+
+.nine {
+  background: mediumvioletred;
+  transform: rotateZ(45deg);
+  /* rotateZ() === rotate() */
+}

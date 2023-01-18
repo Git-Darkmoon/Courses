@@ -1,0 +1,18 @@
+// All the used mixins:
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btnDesign($colorBtn) {
+  cursor: pointer;
+  margin-block: 1.25rem;
+  font-size: 1rem;
+  padding-inline: 1.35rem;
+  padding-block: 0.75rem;
+  background-color: $colorBtn;
+  border-radius: 0.45rem;
+  border: none;
+}

@@ -1,0 +1,66 @@
+$barsColor: rgb(94, 73, 226);
+
+.navBar {
+  width: 100vw;
+  height: 3.5rem;
+  background-color: $barsColor;
+  position: fixed;
+
+  ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+  }
+
+  .links-list {
+    list-style: none;
+  }
+
+  .links {
+    text-decoration: none;
+    color: #ddd;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.15rem;
+
+    &:hover {
+      color: #fa0;
+      font-size: 1.35rem;
+    }
+
+    &:active {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  background-color: $barsColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    color: #ddd;
+    font-weight: 100;
+
+    a {
+      color: #ddd;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+    a:hover {
+      color: #fa0;
+    }
+  }
+}

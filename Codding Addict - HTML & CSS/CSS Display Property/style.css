@@ -1,0 +1,106 @@
+/* 
+Display property:
+
+ELEMENTS HAVE IT SET BY DEFAULT
+BLOCK: Always start a new line and spans full width
+INLINE: Does not start a new line and spans only content
+
+display:block . Works like using a div tag
+display:inline. works like using a span tag
+
+HORIZONTAL CENTERING
+
+*/
+
+/* 
+BLOCK: Browser respects width/height, top/bottom margin
+INLINE: Browser does not respect width/height,top/bottom margin just ignores them
+
+Navbar
+list-type:property
+descendant selectors
+*/
+
+/* * {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.box-1 {
+  background: crimson;
+  padding: 20px;
+  /* Applying box-sizing: border-box;
+
+is going to apply the style effects BUT is going to restrict them to the original box*/
+  box-sizing: border-box;
+}
+.box-2 {
+  background: skyblue;
+}
+.box-3 {
+  background: darkorange;
+  padding: 30px;
+}
+
+/* ~~ inline-block ~~ 
+    does not start a new line
+    ~ browser respects margin,width,height
+*/
+
+a {
+  font-size: 1.5rem;
+  background: red;
+  width: 50px;
+  height: 40px;
+  padding: 1rem;
+  margin: 10px 5px 5px;
+  display: inline-block;
+}
+
+/* 
+display:none = remove from the flow, hide the element 
+collapse the space
+
+opacity:0 , visibility:hidden = hides element preserves the space
+*/
+
+.none,
+.opacity-1,
+.opacity-5,
+.opacity-0,
+.visibility {
+  background: hsl(181, 100%, 31%);
+  margin: 10px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.none {
+  display: none;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0.1;
+}
+
+.visibility {
+  visibility: hidden;
+}

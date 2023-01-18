@@ -1,0 +1,39 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+// Variables:
+$linksColor: #fff;
+$linksColorOnHover: gold;
+
+/* ---------------------------- */
+
+nav {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgb(100, 59, 59);
+  color: #fff;
+
+  @include flexCenter(row);
+
+  ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $linksColor;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $linksColorOnHover;
+    }
+  }
+}

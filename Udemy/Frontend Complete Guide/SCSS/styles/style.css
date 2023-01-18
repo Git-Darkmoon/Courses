@@ -1,0 +1,100 @@
+nav {
+  width: 100vw;
+  height: 4rem;
+  background-color: #643b3b;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+}
+
+.card {
+  max-width: 25rem;
+  -webkit-box-shadow: 2px 2px 16px #999;
+          box-shadow: 2px 2px 16px #999;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.card h1 {
+  margin-block: 0.5rem;
+}
+
+.card .cardBtn {
+  cursor: pointer;
+  margin-block: 1.25rem;
+  font-size: 1rem;
+  padding-inline: 1.35rem;
+  padding-block: 0.75rem;
+  background-color: #ef8f23;
+  border-radius: 0.45rem;
+  border: none;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  position: relative;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.card .cardBtn:hover {
+  background-color: #e88411;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+@import "./navbar", "./mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.cardsContainer {
+  @include flexCenter();
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+}
+
+.card {
+  max-width: 25rem;
+  box-shadow: 2px 2px 16px #999;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 0.75rem;
+  h1 {
+    margin-block: 0.5rem;
+  }
+  .cardBtn {
+    @include btnDesign(#ef8f23);
+
+    transition: background-color 0.1s ease-in;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+
+    &:hover {
+      background-color: hsl(32, 86%, 49%);
+    }
+  }
+}
